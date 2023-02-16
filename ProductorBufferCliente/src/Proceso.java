@@ -142,9 +142,9 @@ public class Proceso extends Thread{
 	
 	public void enviar(Producto producto) {
 		if (color.equals("Naranja")) {
-			buzon.almacenarSemiactivo(producto);
+			buzon.mandarSemiactivo(producto);
 		} else {
-			buzon.almacenarPasivo(producto);
+			buzon.mandarPasivo(producto);
 		}
 	}
 
