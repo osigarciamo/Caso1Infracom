@@ -35,4 +35,12 @@ public class Buffer {
 		return i ;
 		}
 
+	public synchronized Producto retirarSemiactivo(String color) {
+		
+		while (buff.size()==0 and buff.peek.producto.color ==color) {
+			Thread.yield();
+		}
+		return buff.pop();
+	}
+
 }

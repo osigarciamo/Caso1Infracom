@@ -123,7 +123,6 @@ public class Proceso extends Thread{
 		} catch (BrokenBarrierException e) {
 			e.printStackTrace();
 		}
-		
 	}
 	
 	
